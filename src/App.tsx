@@ -1,4 +1,4 @@
-import headerImage from './assets/header_illustration_11.png'
+import headerImage from './assets/header_illustration_1.png'
 import classes from './App.module.css'
 import TopNav from './components/top-nav/TopNav'
 import ProfileNav from './components/profile-nav'
