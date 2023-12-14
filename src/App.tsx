@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import headerImage from './assets/header_illustration_11.png'
+import classes from './App.module.css'
+import TopNav from './components/top-nav/TopNav'
+import ProfileNav from './components/profile-nav'
+import HeaderText from './components/header-text'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className={classes.header}>
+
+        <div className={classes.headerRow}>
+          <ProfileNav name='T'></ProfileNav>
+          <TopNav arr={['Home', 'Find a doctor', 'Apps', 'Testimonials', 'About us']}></TopNav>
+        </div>
+
+        <div className={classes.headerRow}>
+          <HeaderText arr={[
+            'Virtual healthcare for you', 
+            'Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone', 
+            'Consult today']}/>
+            <div className={classes.imgBox}>
+              <img src={headerImage} alt='Header Picture'/>
+            </div>
+        </div>
+      </header>
     </>
   )
 }

@@ -1,0 +1,24 @@
+.headerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.headerRow:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 87px;
+}
+
+.imgBox {
+  width: 693px;
+  height: 598px;
+  margin-right: 100px;
+}
