@@ -1,11 +1,20 @@
 :root {
+  --primary-text-color: rgba(0, 0, 0, 1);
+  --primary-not-selected-text-color:rgba(31, 21, 52, 1);
+  --secondary-text-color: rgba(125, 121, 135, 1);
+  --light-primary-color:rgba(255, 255, 255, 1);
+  --light-secondary-text-color: rgba(255, 255, 255, 0.9);
+  --dot-color: rgba(91, 155, 243, 1);
+  --arrow-not-selected-color:rgba(69, 143, 246, 1);
+  --main-background-color: rgba(255, 255, 255, 1);
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--primary-color);
+  background-color: var(--main-background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
