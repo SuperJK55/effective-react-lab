@@ -1,0 +1,105 @@
+.arrow_button {
+    background-color: transparent;
+    color: var(--button-color);
+    width: 100px;
+    height: 20px;
+    border: 0 solid transparent;
+    font-size: 40px;
+}
+
+.arrow_button:hover {
+    background-color: var(--primary-color);
+    border-radius: 14%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.slider_card {
+    background-color: var(--button-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    padding: 3% 6%;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 6% 0%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    position: relative;
+}
+
+.white_divider {
+    width: 12%;
+    height: 2px;
+    background-color: white;
+}
+
+.img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.h1 {
+    color: white;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+}
+
+.h2 {
+    color: var(--primary-color);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left; 
+}
+
+.h3 {
+    color: white;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    width: max-content;
+}
+
+.dot {
+    background-color: var(--dot-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.5%;
+}
+
+.dot:last-child {
+    background-color: var(--dot-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0%;
+}

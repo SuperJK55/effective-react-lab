@@ -7,6 +7,7 @@ import OurServices from './components/our-services'
 import CardElement from './components/card-element/CardElement'
 import TextSectionOne from './components/text-section-one'
 import TextSectionTwo from './components/text-section-two'
+import SliderBar from './components/slider-bar'
 
 import headerImage from './assets/header_illustration_1.png'
 import search_img from './assets/svg_cards/search.svg'
@@ -19,11 +20,33 @@ import Footer from './components/footer'
 import OutlinedButton from './components/outlined-button'
 import sectionOne_img from './assets/text_section_one.png'
 import sectionTwo_img from './assets/text_section_two.png'
+import edward from './assets/edward.png'
+import dots from './assets/svg_arrows/dots.svg'
 
 
 
 
 function App() {
+  const customers = [
+    {
+      name: 'Edward Newgate',
+      job: 'Founder Circle',
+      review: 'Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely',
+      img: edward
+    },
+    {
+      name: 'Jane Smith',
+      job: 'Graphic Designer',
+      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      img: edward
+    },
+    {
+      name: 'Jane Smith',
+      job: 'Graphic Designer',
+      review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      img: edward
+    },
+  ];
   return (
     <>
       <div className={classes.padding_block}>
@@ -57,7 +80,7 @@ function App() {
             </div>
         <TextSectionOne arr={['Leading healthcare providers', 'We provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver', 'Learn more']} img={sectionOne_img}/>
         <TextSectionTwo arr={['Download our mobile apps', 'Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely', 'Download  🠗']} img={sectionTwo_img}/>
-
+        <SliderBar arr={customers} cardChildren={<img className={classes.dotsRight2} src={dots} />} children={undefined}></SliderBar>
       </div>
       <footer>
         <Footer/>
