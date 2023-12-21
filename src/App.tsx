@@ -12,6 +12,7 @@ import consultation_img from './assets/svg_cards/consultation.svg'
 import details_img from './assets/svg_cards/details.svg'
 import emergency_img from './assets/svg_cards/emergency.svg'
 import tracking_img from './assets/svg_cards/tracking.svg'
+import Footer from './components/footer'
 
 
 
@@ -43,7 +44,9 @@ function App() {
         <CardElement title='Emergency care' subtitle="You can get 24/7 urgent care for yourself or your children and your lovely family" logo={emergency_img}/>
         <CardElement title='Tracking' subtitle="Track and save your medical history and health data " logo={tracking_img}/>
       </OurServices>
-      
+      <footer>
+        <Footer/>
+      </footer>
     </>
   )
 }

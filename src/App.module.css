@@ -22,3 +22,8 @@
   height: 598px;
   margin-right: 100px;
 }
+
+footer{
+  width: 100%;
+  background: var(--background-color-box);
+}
