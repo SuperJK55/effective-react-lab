@@ -1,19 +1,19 @@
 import classes from './TopNav.module.css' 
 import React from 'react' 
-import NavText from '../nav-text'
+import NavButton from '../nav-button'
  
-interface TopNavProps {
+interface ITopNav {
     arr: string[];
 }
 
-const TopNav: React.FC<TopNavProps> = ({arr}) => { 
+const TopNav: React.FC<ITopNav> = ({arr}) => { 
     return ( 
         <div className={classes.topNav}> 
-            <NavText _enabled={true} text={arr[0]}></NavText>
-            <NavText _enabled={false} text={arr[1]}></NavText>
-            <NavText _enabled={false} text={arr[2]}></NavText>
-            <NavText _enabled={false} text={arr[3]}></NavText>
-            <NavText _enabled={false} text={arr[4]}></NavText>
+            <NavButton _enabled={true} text={arr[0]}></NavButton>
+            <NavButton _enabled={false} text={arr[1]}></NavButton>
+            <NavButton _enabled={false} text={arr[2]}></NavButton>
+            <NavButton _enabled={false} text={arr[3]}></NavButton>
+            <NavButton _enabled={false} text={arr[4]}></NavButton>
         </div> 
     ); 
 }; 

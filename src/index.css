@@ -2,7 +2,7 @@
   margin: 0;
   padding-left: 100px;
   padding-right: 100px;
-  text-align: center;
+
   width: 100%;
   background-color: var(--main-bg-color);
 }
@@ -26,9 +26,16 @@
 
   --blue-color: rgba(69, 143, 246, 1);
 
+  --card-background: rgba(255,255,255,1);
+  --card-shadow: rgba(229, 233, 246, 0.40);
+
+  --background-color-box: linear-gradient(215deg, #67C3F3 0%, #5A98F2 100%);
+
+  --logo-name-text-color: rgba(35, 51, 72, 1);
+  
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-
+  
   color-scheme: light dark;
   color: var(--primary-color);
   background-color: var(--main-bg-color);
@@ -52,6 +59,13 @@ header{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (prefers-color-scheme: light) {

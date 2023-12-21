@@ -1,11 +1,11 @@
 import classes from './PrimaryButton.module.css' 
 import React from 'react' 
  
-interface PrimaryButtonProps {
+interface IPrimaryButton {
     text: string;
 }
 
-const PrimaryButton: React.FC<PrimaryButtonProps> = ({text}) => { 
+const PrimaryButton: React.FC<IPrimaryButton> = ({text}) => { 
     return ( 
         <button className={classes.primaryButton}> 
             {text}

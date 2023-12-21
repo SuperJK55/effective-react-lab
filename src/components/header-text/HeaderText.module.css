@@ -5,7 +5,7 @@
     margin-right: 127px;
 }
 
-h1 {
+.title_header {
     color: var(--primary-text-color);
     font-size: 48px;
     font-style: normal;
@@ -15,7 +15,7 @@ h1 {
     margin-bottom: 25px;
 }
 
-h2 {
+.subtitle_header {
     color: var(--secondary-text-color);
     font-size: 21px;
     font-style: normal;

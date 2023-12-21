@@ -1,12 +1,12 @@
-import classes from './NavText.module.css' 
+import classes from './NavButton.module.css' 
 import React from 'react'
 
-interface NavTextProps {
+interface INavButton {
     _enabled: boolean;
     text: string;
 }
 
-const NavText: React.FC<NavTextProps> = ({ _enabled, text }) => {  
+const NavButton: React.FC<INavButton> = ({ _enabled, text }) => {  
     const primaryTopNavColor = '#1F1534';
     const primaryUnavailableTopNavColor = 'rgba(31, 21, 52, 0.5)';
   
@@ -20,4 +20,4 @@ const NavText: React.FC<NavTextProps> = ({ _enabled, text }) => {
     );
 };
 
-export default NavText;
+export default NavButton;
