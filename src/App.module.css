@@ -23,17 +23,26 @@
   margin-right: 100px;
 }
 
-footer{
+footer {
   width: 100%;
   background: var(--background-color-box);
 }
 
-.padding_block{
-  padding-left: 10%; 
-  padding-right: 10%; 
+.padding_block {
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.outlinedButton{
+.outlinedButton_learnMore {
   padding-top: 5%;
   display: flex;
   justify-content: center;
 }
+
+.outlinedButton_viewAll {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+
+
