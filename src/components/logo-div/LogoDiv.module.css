@@ -6,18 +6,20 @@
 }
 
 .company_logo {
-  border-radius: 50%;
+  display: flex;
+  border-radius: 100%;
   width: 41px;
   height: 41px;
   font-size: 26px;
-  padding: 4px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   background-color: var(--blue-color);
   margin-right: 20px;
-  color: white;
+  color: var(--primary-color);
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .company_name {
